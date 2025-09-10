@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>PDF Translator</title>
+</head>
+<body>
+    
+
+    <div class="container">
+        <div class="sidebar">
+            <div class="upload">
+                <input type="file" accept="application/pdf" class="targetPdf">
+                <img src="./upload icon.png" alt="image">
+            </div>
+            <select class="selectLang">
+                <option value="bn">Bangla</option>
+                <option value="en">English</option>
+                <option value="hi">Hindi</option>
+                <option value="zh">Chiness</option>
+                <option value="it">Itali</option>
+                <option value="ar">Arabic</option>
+            </select>
+            <button class="translatePDF">Translate PDF</button>
+            <button class="btn-back" onclick="window.location.href='home.html'">Back to Home</button>
+        </div>
+
+        <div class="temp-body">
+            <iframe src="" type="application/pdf" style="width: 100%; height: 100vh; border: none; overflow: hidden;" scrolling="no" class="showPDF"></iframe>
+            
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+    <script src="./javascript.js"></script>
+</body>
+</html>

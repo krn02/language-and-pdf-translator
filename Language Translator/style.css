@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+.sidebar{
+    width: 20%;
+    background: #e9eeed;
+    border: 1px solid #ddd;
+    height: 100vh;
+    padding: 20px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+.btn-back{
+    width: 100%;
+    height: 40px;
+    background:  #3498db;
+    border-style: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all .3s ease-out;
+}
+
+.btn-back:hover{
+    background-color: #2980b9;
+    transform: scale(1.05); 
+}
+
+.upload{
+    width: 100%;
+    height: 250px;
+    border: 1px dashed #422a0e;
+    border-radius: 6px;
+    position: relative;
+}
+.upload img, .upload input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+    transform: translate(6%, 6%);
+    border-radius: 6px;
+    object-fit: cover;
+}
+.upload input{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+}
+
+.translatePDF{
+    width: 100%;
+    height: 40px;
+    background:  #3498db;
+    border-style: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all .3s ease-out;
+}
+.translatePDF:hover{
+    background: #2980b9;
+    transform: scale(1.05);
+}
+
+.temp-body{
+    width: 80%;
+    padding: 20px 30px;
+}
+.sidebar select{
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px 5px;
+}
+.temp-body p {
+    padding: 5px 20px;
+    font-weight: 500;
+    color: #0d3e29;
+  }
+
+  

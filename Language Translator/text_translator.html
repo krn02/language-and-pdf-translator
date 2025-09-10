@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Translator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="languages.js"></script>
+</head>
+<body style="background-image: url('2ndfront.avif'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+
+    <div class="container full-screen wide-container">
+        <h2 class="large-header">Text Translator</h2>
+
+        <form id="textForm">
+            <label for="text" class="large-label">Enter Text</label><br>
+            <textarea id="text" placeholder="Type your text here..." rows="5" cols="60" class="large-textarea"></textarea><br><br>
+
+            <label for="language" class="large-label">Select Language</label><br>
+            <select id="language" class="language"></select><br><br>
+
+            <div class="button-group">
+                <button type="button" class="large-button" onclick="handleTranslation()">Translate</button>
+                <button type="button" class="large-button" onclick="swapTextFields()">Swap</button>
+                <button type="button" class="large-button" onclick="copyTranslatedText()">Copy</button>
+            </div>
+        </form>
+
+        <br>
+
+        <label for="translatedText" class="large-label">Translated Text</label><br>
+        <textarea id="translatedText" rows="5" cols="60" class="large-textarea" readonly></textarea><br><br>
+
+        <button class="large-button" onclick="window.location.href='home.html'">Back to Home</button>
+    </div>
+
+    <script src="text_translator.js"></script>
+</body>
+</html>
